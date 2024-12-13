@@ -483,6 +483,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/flame/proprietary/vendor/etc/init/rebootescrow-citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-citadel.rc \
     vendor/google/flame/proprietary/vendor/etc/init/rlsservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rlsservice.rc \
     vendor/google/flame/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+	vendor/google/coral/proprietary/vendor/etc/init/android.hardware.biometrics.face@1.0-service.google.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@1.0-service.google.rc \
     vendor/google/flame/proprietary/vendor/etc/init/vendor.google.airbrush@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.airbrush@1.0-service.rc \
     vendor/google/flame/proprietary/vendor/etc/init/vendor.google.radioext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radioext@1.0-service.rc \
     vendor/google/flame/proprietary/vendor/etc/init/vendor.google.wireless_charger@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wireless_charger@1.3-service.rc \
@@ -508,6 +509,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/flame/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/google/flame/proprietary/vendor/etc/modem_stat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem_stat.conf \
     vendor/google/flame/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+	vendor/google/coral/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/google/flame/proprietary/vendor/etc/permissions/com.google.android.camera.experimental2019.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.google.android.camera.experimental2019.xml \
     vendor/google/flame/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/google/flame/proprietary/vendor/etc/qdcm_calib_data_nt37280_amoled_5.68_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt37280_amoled_5.68_cmd_mode_panel.xml \
@@ -1377,6 +1379,7 @@ PRODUCT_PACKAGES += \
     lib_profiler \
     lib_sensor_listener \
     libairbrush-pixel \
+	libautocalsolvers \
     libcertverifier \
     libcom.qti.chinodeutils \
     libdarwinn_client \
@@ -1509,6 +1512,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     android.hardware.weaver@1.0-service.citadel.xml \
     manifest_android.hardware.drm-service.widevine.xml \
+	manifest_face \
     manifest_input.processor-service.xml \
     rebootescrow-citadel.xml \
     vendor.google.wireless_charger@1.3-service-vendor.xml \

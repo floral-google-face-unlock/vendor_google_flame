@@ -9730,6 +9730,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libautocalsolvers",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libautocalsolvers.so"],
+			shared_libs: ["libm", "liblog", "libz", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.biometrics.face@1.0-service.google",
+    owner: "google",
+    srcs: ["proprietary/vendor/bin/hw/android.hardware.biometrics.face@1.0-service.google"],
+    installable: true,
+    relative_install_path: "vendor/bin/hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcertverifier",
 	owner: "google",
 	strip: {
